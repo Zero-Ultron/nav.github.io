@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Menu Example</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.menu-container {
+    position: relative;
+}
+
+#menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 40px; /* Adjust based on button height */
+    left: 0;
+    width: 200px; /* Set a width for the menu */
+}
+
+#menu li {
+    padding: 10px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <button id="toggle-button">Toggle Menu</button>
+        <ul id="menu" class="hidden">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        document.getElementById('toggle-button').addEventListener('click', function() {
+    const menu = document.getElementById('menu');
+    menu.classList.toggle('hidden');
+});
+    </script>
+</body>
+</html>

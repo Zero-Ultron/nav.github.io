@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-monitor     {
+    display: flex;
+    justify-content:space-between;
+    background-color: gray;
+    padding: 20px; 
+}
+
+.ZERO {
+    padding: 10px;
+    
+}
+
+.ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+
+
+.li {
+    color: black;
+}
+
+li:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+
+.mobile {
+    display: none;
+    
+}
+
+#nav-mobile {
+    border: 2px solid black;
+    position: relative;
+    width: 24%;
+    cursor: pointer;
+    transition: 1.5s;
+    background-color: gray;
+}
+
+.span-mobile {
+    display: flex;
+    justify-content: center;
+    margin: 13px;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+}
+
+/* .lorem {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-1 {
+    padding: 10px;
+    background-color: aqua;
+}
+
+.content-2 {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.img-lorem {
+    width: 50%;
+    justify-content: center;
+}
+
+.content-3 {
+    padding: 10px;
+} */
+
+/* Responsive */
+
+
+/* ukuran mobile */
+@media screen and (min-width: 100px) and (max-width: 600px){
+    .li {
+        display: none;
+    }
+
+    .button {
+        display: block;
+    }
+
+    #nav-mobile {
+        left: 76%;
+        
+    }
+}
+
+/* ukuran monitor */
+@media screen and (min-width: 600px) and (max-width: 1200px){
+    .ul {
+        width: 45%;
+        transition: 1.5s;
+    }
+    
+    #nav-mobile {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+}
+
+/* ukuran monitor besar */
+@media screen and (min-width: 1200px) and (max-width: 4000px){
+    .ul {
+        width: 25%;
+        transition: 1.5s;
+    }
+
+    #nav-mobile {
+        display: none;
+    }
+
+    .button {
+        display: none;
+    }
+}
+
